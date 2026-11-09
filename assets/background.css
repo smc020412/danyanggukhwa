@@ -1,0 +1,23 @@
+.flower-background {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  html body {
+    background: #faf7ee;
+  }
+
+  .flower-background {
+    display: block;
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    background-image: url("chrysanthemum.svg");
+    background-position: 0 var(--flower-offset, 0px);
+  }
+
+  main {
+    position: relative;
+    background: #fff;
+  }
+}
